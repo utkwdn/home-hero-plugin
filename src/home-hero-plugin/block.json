@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "utk-hero/home-hero-plugin",
+	"version": "0.1.0",
+	"title": "Home Hero",
+	"category": "media",
+	"icon": "layout",
+	"description": "Adds an editable Home Hero custom block",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"image1": {
+			"type": "string",
+			"default": ""
+		},
+		"image2": {
+			"type": "string",
+			"default": ""
+		},
+		"image3": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "home-hero-plugin",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js"
+}
