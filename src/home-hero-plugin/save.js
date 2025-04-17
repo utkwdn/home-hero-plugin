@@ -8,7 +8,7 @@ export default function save({ attributes }) {
 		: {};
 
 	return (
-		<div {...useBlockProps.save()} className="home-hero">
+		<div {...useBlockProps.save()} className="home-hero alignfull">
 			<div className="top-row">
 				<div className="background-image-div" style={backgroundStyle}></div>
 				<div className="title-and-text">

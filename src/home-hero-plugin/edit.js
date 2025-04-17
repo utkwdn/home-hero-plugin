@@ -41,7 +41,7 @@ export default function Edit({ attributes, setAttributes }) {
 		: {};
 
 	return (		
-		<div {...useBlockProps()} className="home-hero">
+		<div {...useBlockProps()} className="home-hero alignfull">
 			<div className='top-row'>
 				<div
 					className='background-image-div'
