@@ -47,8 +47,8 @@ export default function Edit( { attributes, setAttributes } ) {
 		: {};
 
 	return (
-		<div { ...useBlockProps() } className="home-hero alignfull">
-			<div className="top-row">
+		<div { ...useBlockProps() } className="home-hero-container alignfull">
+			<div className="home-hero">
 				<div
 					className="background-image-div"
 					style={ backgroundStyle }
@@ -86,10 +86,12 @@ export default function Edit( { attributes, setAttributes } ) {
 						/>
 					</div>
 				</div>
-			</div>
-			<div className="bottom-row">
-				{ renderImage( 'image2', image2, 1 ) }
-				{ renderImage( 'image3', image3, 2 ) }
+				<div className="home-hero-image-2">
+					{ renderImage( 'image2', image2, 1 ) }
+				</div>
+				<div className="home-hero-image-3">
+					{ renderImage( 'image3', image3, 1 ) }
+				</div>
 				<div className="logo-block">
 					<p>Logo Here</p>
 				</div>
