@@ -73,6 +73,7 @@ export default function Edit( { attributes, setAttributes } ) {
 						/>
 					) }
 				</div>
+				<div className="title-and-text-shadow"></div>
 				<div className="title-and-text">
 					<div className="inner-blocks-area">
 						<InnerBlocks

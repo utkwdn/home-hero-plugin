@@ -19,6 +19,9 @@ export default function save( { attributes } ) {
 				></div>
 				<div className="title-and-text-shadow"></div>
 				<div className="title-and-text">
+					<h2>
+						<span>Find Your Place On</span> Rocky Top
+					</h2>
 					<div className="inner-blocks-area">
 						<InnerBlocks.Content />
 					</div>
