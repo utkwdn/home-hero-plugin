@@ -16,16 +16,11 @@ export default function Edit( { attributes, setAttributes } ) {
 	};
 
 	const renderImage = ( field, url, index ) => (
-		<div key={ index } className="photo-upload">
+		<picture key={ index }>
 			{ url ? (
 				<img
 					src={ url }
 					alt={ __( 'Selected image', 'hero-photo-layout' ) }
-					style={ {
-						width: '100%',
-						height: 'auto',
-						cursor: 'pointer',
-					} }
 					onClick={ () => setAttributes( { [ field ]: '' } ) }
 				/>
 			) : (
@@ -39,39 +34,14 @@ export default function Edit( { attributes, setAttributes } ) {
 					onSelect={ handleImageSelect( field ) }
 				/>
 			) }
-		</div>
+		</picture>
 	);
-
-	const backgroundStyle = image1
-		? { backgroundImage: `url(${ image1 })` }
-		: {};
 
 	return (
 		<div { ...useBlockProps() } className="home-hero-container alignfull">
 			<div className="home-hero">
-				<div
-					className="background-image-div"
-					style={ backgroundStyle }
-					onClick={ () => setAttributes( { image1: '' } ) }
-					title={ __(
-						'Click to remove background image',
-						'hero-photo-layout'
-					) }
-				>
-					{ ! image1 && (
-						<MediaPlaceholder
-							icon="format-image"
-							labels={ {
-								title: __(
-									'Select Background Image',
-									'hero-photo-layout'
-								),
-							} }
-							accept="image/*"
-							allowedTypes={ [ 'image' ] }
-							onSelect={ handleImageSelect( 'image1' ) }
-						/>
-					) }
+				<div className="home-hero-image-1">
+					{ renderImage( 'image1', image1, 1 ) }
 				</div>
 				<div className="title-and-text-shadow"></div>
 				<div className="title-and-text">
