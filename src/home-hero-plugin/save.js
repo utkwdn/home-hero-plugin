@@ -38,7 +38,9 @@ export default function save( { attributes } ) {
 					) }
 				</div>
 				<div className="logo-block">
-					<p>Logo Here</p>
+					<div className="logo-block-image">
+						<img src="http://utk.local/wp-content/uploads/2025/04/hp-tagline-vertical.png" />
+					</div>
 				</div>
 			</div>
 		</div>
