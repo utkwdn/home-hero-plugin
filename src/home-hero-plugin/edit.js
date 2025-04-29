@@ -65,7 +65,7 @@ export default function Edit( { attributes, setAttributes } ) {
 				</div>
 				<div className="logo-block">
 					<div className="logo-block-image">
-						<img src="http://utk.local/wp-content/uploads/2025/04/hp-tagline-vertical.png" />
+						<img src="/wp-content/plugins/home-hero-plugin/src/home-hero-plugin/hp-tagline-vertical.png" />
 					</div>
 				</div>
 			</div>
