@@ -1,17 +1,17 @@
 import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
 
-export default function save( { attributes } ) {
+export default function save({ attributes }) {
 	const { image1, image2, image3 } = attributes;
 
 	return (
 		<div
-			{ ...useBlockProps.save() }
+			{...useBlockProps.save()}
 			className="home-hero-container alignfull"
 		>
 			<div className="home-hero">
 				<div className="home-hero-image-1">
 					<picture>
-						{ image1 && <img src={ image1 } alt="Photo 1" /> }
+						{image1 && <img src={image1} alt="Photo 1" />}
 					</picture>
 				</div>
 				<div className="title-and-text-shadow"></div>
@@ -24,18 +24,18 @@ export default function save( { attributes } ) {
 					</div>
 				</div>
 				<div className="home-hero-image-2">
-					{ image2 && (
+					{image2 && (
 						<picture>
-							<img src={ image2 } alt="Photo 2" />
+							<img src={image2} alt="Photo 2" />
 						</picture>
-					) }
+					)}
 				</div>
 				<div className="home-hero-image-3">
-					{ image3 && (
+					{image3 && (
 						<picture>
-							<img src={ image3 } alt="Photo 3" />
+							<img src={image3} alt="Photo 3" />
 						</picture>
-					) }
+					)}
 				</div>
 				<div className="logo-block">
 					<div className="logo-block-image">
