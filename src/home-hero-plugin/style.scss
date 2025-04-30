@@ -4,6 +4,29 @@
 	--home-hero-3col-width: 500px;
 }
 
+.fade-in,
+.fade-up,
+.fade-right,
+.fade-left-after {
+	opacity: 0;
+}
+
+.fade-up {
+	transform: translateY(25px);
+}
+
+.fade-right {
+	transform: translateX(-25px);
+}
+
+.fade-left {
+	transform: translateX(100%);
+}
+
+.fade-left-after {
+	transform: translateX(25px);
+}
+
 .home-hero-container {
 	background: var(--home-hero-container-bg) var(--wp--preset--color--orange);
 	background-repeat: repeat;
@@ -40,6 +63,7 @@
 }
 
 .home-hero-image-1 {
+	overflow: hidden;
 	grid-area: 1 / 1 / 1 / 3;
 	padding: 0 0 0 30px;
 	img {
@@ -206,6 +230,7 @@
 	justify-content: center;
 	width: 100%;
 	padding: 20px;
+	text-align: center;
 	img {
 		max-width: 100%;
 		width: 50%;
