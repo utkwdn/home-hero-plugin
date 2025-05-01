@@ -1,7 +1,7 @@
 import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
 
 export default function save({ attributes }) {
-	const { image1, image2, image3 } = attributes;
+	const { image1, image2, image3, image4 } = attributes;
 
 	return (
 		<div
@@ -56,7 +56,8 @@ export default function save({ attributes }) {
 						<picture>
 							<img
 								className="fade-up"
-								src="/wp-content/plugins/home-hero-plugin/src/home-hero-plugin/hp-tagline-vertical.png"
+								src={image4}
+								alt="Photo 4"
 							/>
 						</picture>
 					</div>

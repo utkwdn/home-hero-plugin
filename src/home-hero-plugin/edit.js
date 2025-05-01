@@ -7,7 +7,7 @@ import {
 import './editor.scss';
 
 export default function Edit({ attributes, setAttributes }) {
-	const { image1, image2, image3 } = attributes;
+	const { image1, image2, image3, image4 } = attributes;
 
 	const handleImageSelect = (field) => (media) => {
 		if (media && media.url) {
@@ -65,7 +65,7 @@ export default function Edit({ attributes, setAttributes }) {
 				</div>
 				<div className="logo-block">
 					<div className="logo-block-image">
-						<img src="/wp-content/plugins/home-hero-plugin/src/home-hero-plugin/hp-tagline-vertical.png" />
+						{renderImage('image4', image4, 1)}
 					</div>
 				</div>
 			</div>
