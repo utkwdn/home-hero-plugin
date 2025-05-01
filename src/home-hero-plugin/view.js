@@ -20,7 +20,7 @@ gsap.to('.fade-up', {
 	y: 0,
 	duration: 0.5,
 	stagger: 0.3,
-	delay: 0.5,
+	// delay: 0.5,
 	ease: "power3.out",
 	scrollTrigger: {
 		trigger: '.fade-up',
@@ -33,7 +33,7 @@ gsap.to('.fade-right', {
 	opacity: 1,
 	x: 0,
 	duration: 1,
-	delay: 0.5,
+	// delay: 0.5,
 	ease: "power3.out",
 	scrollTrigger: {
 		trigger: '.fade-right',
@@ -46,7 +46,7 @@ gsap.to('.fade-left, .fade-left-after', {
 	opacity: 1,
 	x: 0,
 	duration: 0.8,
-	delay: 0.5,
+	// delay: 0.5,
 	stagger: 0.6,
 	ease: "power4.out",
 	scrollTrigger: {

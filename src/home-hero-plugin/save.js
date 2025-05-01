@@ -29,37 +29,39 @@ export default function save({ attributes }) {
 						<InnerBlocks.Content />
 					</div>
 				</div>
-				<div className="home-hero-image-2">
-					{image2 && (
-						<picture>
-							<img
-								className="fade-up"
-								src={image2}
-								alt="Photo 2"
-							/>
-						</picture>
-					)}
-				</div>
-				<div className="home-hero-image-3">
-					{image3 && (
-						<picture>
-							<img
-								className="fade-up"
-								src={image3}
-								alt="Photo 3"
-							/>
-						</picture>
-					)}
-				</div>
-				<div className="logo-block fade-in">
-					<div className="logo-block-image">
-						<picture>
-							<img
-								className="fade-up"
-								src={image4}
-								alt="Photo 4"
-							/>
-						</picture>
+				<div className="home-hero-grid">
+					<div className="home-hero-image-2">
+						{image2 && (
+							<picture>
+								<img
+									className="fade-up"
+									src={image2}
+									alt="Photo 2"
+								/>
+							</picture>
+						)}
+					</div>
+					<div className="home-hero-image-3">
+						{image3 && (
+							<picture>
+								<img
+									className="fade-up"
+									src={image3}
+									alt="Photo 3"
+								/>
+							</picture>
+						)}
+					</div>
+					<div className="logo-block">
+						<div className="logo-block-image fade-in">
+							<picture>
+								<img
+									className="fade-up"
+									src={image4}
+									alt="Photo 4"
+								/>
+							</picture>
+						</div>
 					</div>
 				</div>
 			</div>
