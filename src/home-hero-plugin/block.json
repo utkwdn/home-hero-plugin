@@ -23,6 +23,10 @@
 		"image3": {
 			"type": "string",
 			"default": ""
+		},
+		"image4": {
+			"type": "string",
+			"default": ""
 		}
 	},
 	"textdomain": "home-hero-plugin",

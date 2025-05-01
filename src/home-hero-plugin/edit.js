@@ -58,14 +58,14 @@ export default function Edit({ attributes, setAttributes }) {
 					</div>
 				</div>
 				<div className="home-hero-image-2">
-					{renderImage('image2', image2, 1)}
+					{renderImage('image2', image2, 2)}
 				</div>
 				<div className="home-hero-image-3">
-					{renderImage('image3', image3, 1)}
+					{renderImage('image3', image3, 3)}
 				</div>
 				<div className="logo-block">
 					<div className="logo-block-image">
-						{renderImage('image4', image4, 1)}
+						{renderImage('image4', image4, 4)}
 					</div>
 				</div>
 			</div>
