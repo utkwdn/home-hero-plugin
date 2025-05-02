@@ -18,8 +18,8 @@ gsap.to('.fade-in', {
 gsap.to('.fade-up', {
 	opacity: 1,
 	y: 0,
-	duration: 0.5,
-	stagger: 0.3,
+	duration: 0.4,
+	stagger: 0.2,
 	// delay: 0.5,
 	ease: "power3.out",
 	scrollTrigger: {
