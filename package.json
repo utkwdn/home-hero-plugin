@@ -16,7 +16,9 @@
 	},
 	"devDependencies": {
 		"@wordpress/prettier-config": "^4.22.0",
-		"@wordpress/scripts": "^30.14.1",
-		"prettier": "^3.5.3"
+		"@wordpress/scripts": "^30.14.1"
+	},
+	"dependencies": {
+		"gsap": "^3.13.0"
 	}
 }
