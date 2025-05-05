@@ -3,30 +3,48 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to('.fade-in', {
-	opacity: 1,
-	y: 0,
-	duration: 1,
-	stagger: 0.5,
-	scrollTrigger: {
-		trigger: '.fade-in',
-		start: 'top 90%',
-		toggleActions: 'play none none none',
-	},
-});
+let mm = gsap.matchMedia();
 
-gsap.to('.fade-up', {
-	opacity: 1,
-	y: 0,
-	duration: 0.4,
-	stagger: 0.2,
-	// delay: 0.5,
-	ease: "power3.out",
-	scrollTrigger: {
-		trigger: '.fade-up',
-		start: 'top 90%',
-		toggleActions: 'play none none none',
-	},
+mm.add('(min-width: 768px)', () => {
+	gsap.to('.fade-in', {
+		opacity: 1,
+		y: 0,
+		duration: 1,
+		stagger: 0.5,
+		scrollTrigger: {
+			trigger: '.fade-in',
+			start: 'top 90%',
+			toggleActions: 'play none none none',
+		},
+	});
+
+	gsap.to('.fade-up', {
+		opacity: 1,
+		y: 0,
+		duration: 0.4,
+		stagger: 0.2,
+		// delay: 0.5,
+		ease: 'power3.out',
+		scrollTrigger: {
+			trigger: '.fade-up',
+			start: 'top 90%',
+			toggleActions: 'play none none none',
+		},
+	});
+
+	gsap.to('.fade-left, .fade-left-after', {
+		opacity: 1,
+		x: 0,
+		duration: 0.8,
+		// delay: 0.5,
+		stagger: 0.6,
+		ease: 'power4.out',
+		scrollTrigger: {
+			trigger: '.fade-left',
+			start: 'top 90%',
+			toggleActions: 'play none none none',
+		},
+	});
 });
 
 gsap.to('.fade-right', {
@@ -34,23 +52,9 @@ gsap.to('.fade-right', {
 	x: 0,
 	duration: 1,
 	// delay: 0.5,
-	ease: "power3.out",
+	ease: 'power3.out',
 	scrollTrigger: {
 		trigger: '.fade-right',
-		start: 'top 90%',
-		toggleActions: 'play none none none',
-	},
-});
-
-gsap.to('.fade-left, .fade-left-after', {
-	opacity: 1,
-	x: 0,
-	duration: 0.8,
-	// delay: 0.5,
-	stagger: 0.6,
-	ease: "power4.out",
-	scrollTrigger: {
-		trigger: '.fade-left',
 		start: 'top 90%',
 		toggleActions: 'play none none none',
 	},

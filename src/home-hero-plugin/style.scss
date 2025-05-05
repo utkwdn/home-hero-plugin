@@ -4,27 +4,26 @@
 	--home-hero-3col-width: 500px;
 }
 
-.fade-in,
-.fade-up,
-.fade-right,
-.fade-left-after {
-	opacity: 0;
-}
-
-.fade-up {
-	transform: translateY(25px);
-}
-
 .fade-right {
+	opacity: 0;
 	transform: translateX(-25px);
 }
 
-.fade-left {
-	transform: translateX(100%);
-}
+@media screen and (min-width: 768px) {
+	.fade-up {
+		opacity: 0;
+		transform: translateY(25px);
+	}
 
-.fade-left-after {
-	transform: translateX(25px);
+	.fade-left {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+
+	.fade-left-after {
+		opacity: 0;
+		transform: translateX(25px);
+	}
 }
 
 .home-hero-container {
