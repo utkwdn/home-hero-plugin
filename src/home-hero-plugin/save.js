@@ -22,9 +22,6 @@ export default function save({ attributes }) {
 				</div>
 				<div className="title-and-text-shadow fade-left"></div>
 				<div className="title-and-text fade-left-after">
-					<h2>
-						<span>Find Your Place On</span> Rocky Top
-					</h2>
 					<div className="inner-blocks-area">
 						<InnerBlocks.Content />
 					</div>
