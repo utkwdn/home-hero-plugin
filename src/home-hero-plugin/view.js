@@ -23,7 +23,6 @@ mm.add('(min-width: 768px)', () => {
 		y: 0,
 		duration: 0.4,
 		stagger: 0.2,
-		// delay: 0.5,
 		ease: 'power3.out',
 		scrollTrigger: {
 			trigger: '.fade-up',
@@ -36,7 +35,6 @@ mm.add('(min-width: 768px)', () => {
 		opacity: 1,
 		x: 0,
 		duration: 0.8,
-		// delay: 0.5,
 		stagger: 0.6,
 		ease: 'power4.out',
 		scrollTrigger: {
@@ -51,7 +49,6 @@ gsap.to('.fade-right', {
 	opacity: 1,
 	x: 0,
 	duration: 1,
-	// delay: 0.5,
 	ease: 'power3.out',
 	scrollTrigger: {
 		trigger: '.fade-right',
