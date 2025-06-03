@@ -1,5 +1,5 @@
 === Home Hero ===
-Contributors:      The WordPress Contributors
+Contributors:      The University of Tennessee, Knoxville
 Tags:              block
 Tested up to:      6.7
 Stable tag:        0.1.0
