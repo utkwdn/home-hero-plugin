@@ -52,6 +52,7 @@ export default function Edit({ attributes, setAttributes }) {
 								'core/heading',
 								'core/image',
 								'core/buttons',
+								'core/shortcode',
 							]}
 							templateLock={false}
 						/>
