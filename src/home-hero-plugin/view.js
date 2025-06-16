@@ -1,12 +1,12 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin( ScrollTrigger );
 
 let mm = gsap.matchMedia();
 
-mm.add('(min-width: 768px)', () => {
-	gsap.to('.fade-in', {
+mm.add( '(min-width: 768px)', () => {
+	gsap.to( '.fade-in', {
 		opacity: 1,
 		y: 0,
 		duration: 1,
@@ -16,9 +16,9 @@ mm.add('(min-width: 768px)', () => {
 			start: 'top 90%',
 			toggleActions: 'play none none none',
 		},
-	});
+	} );
 
-	gsap.to('.fade-up', {
+	gsap.to( '.fade-up', {
 		opacity: 1,
 		y: 0,
 		duration: 0.4,
@@ -29,9 +29,9 @@ mm.add('(min-width: 768px)', () => {
 			start: 'top 90%',
 			toggleActions: 'play none none none',
 		},
-	});
+	} );
 
-	gsap.to('.fade-left, .fade-left-after', {
+	gsap.to( '.fade-left, .fade-left-after', {
 		opacity: 1,
 		x: 0,
 		duration: 0.8,
@@ -42,10 +42,10 @@ mm.add('(min-width: 768px)', () => {
 			start: 'top 90%',
 			toggleActions: 'play none none none',
 		},
-	});
-});
+	} );
+} );
 
-gsap.to('.fade-right', {
+gsap.to( '.fade-right', {
 	opacity: 1,
 	x: 0,
 	duration: 1,
@@ -55,4 +55,4 @@ gsap.to('.fade-right', {
 		start: 'top 90%',
 		toggleActions: 'play none none none',
 	},
-});
+} );
