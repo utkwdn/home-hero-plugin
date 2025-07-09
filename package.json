@@ -1,8 +1,9 @@
 {
 	"name": "home-hero-plugin",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Adds an editable Home Hero custom block",
-	"author": "The WordPress Contributors",
+	"author": "The University of Tennessee, Knoxville",
+	"homepage": "https://github.com/utkwdn/home-hero-plugin",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
 	"scripts": {
@@ -15,6 +16,11 @@
 		"start": "wp-scripts start --blocks-manifest"
 	},
 	"devDependencies": {
-		"@wordpress/scripts": "^30.14.1"
+		"@wordpress/scripts": "^30.14.1",
+		"@wordpress/prettier-config": "^4.22.0",
+		"prettier": "npm:wp-prettier@^3.0.3"
+	},
+	"dependencies": {
+		"gsap": "^3.13.0"
 	}
 }
