@@ -1,8 +1,9 @@
 {
 	"name": "home-hero-plugin",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Adds an editable Home Hero custom block",
 	"author": "The University of Tennessee, Knoxville",
+	"homepage": "https://github.com/utkwdn/home-hero-plugin",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
 	"scripts": {

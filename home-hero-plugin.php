@@ -1,8 +1,9 @@
 <?php
 /**
  * Plugin Name:       Home Hero
+ * Plugin URI:        https://github.com/utkwdn/home-hero-plugin
  * Description:       Adds an editable Home Hero custom block
- * Version:           0.1.0
+ * Version:           1.0.0
  * Requires at least: 6.7
  * Requires PHP:      7.4
  * Author:            The University of Tennessee, Knoxville
