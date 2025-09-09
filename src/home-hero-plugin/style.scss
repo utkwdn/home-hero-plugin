@@ -136,7 +136,7 @@
 @media screen and (min-width: 960px) {
 	.title-and-text-shadow {
 		grid-area: 1 / 4 / 1 / 6;
-		margin: 0 0 -60px -110px;
+		margin: 0 calc(var(--wp--style--root--padding-right, 1.5rem) * -1) -60px -110px;
 	}
 }
 
