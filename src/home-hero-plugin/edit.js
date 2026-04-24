@@ -48,7 +48,6 @@ export default function Edit( { attributes, setAttributes } ) {
 							src={ normalized.url }
 							alt={ normalized.alt || '' }
 						/>
-
 						<div className="image-controls">
 							<MediaUploadCheck>
 								<MediaUpload
@@ -71,7 +70,6 @@ export default function Edit( { attributes, setAttributes } ) {
 									) }
 								/>
 							</MediaUploadCheck>
-
 							<Button
 								variant="link"
 								isDestructive
@@ -109,9 +107,7 @@ export default function Edit( { attributes, setAttributes } ) {
 				<div className="home-hero-image-1">
 					{ renderImage( 'image1', image1, 1 ) }
 				</div>
-
 				<div className="title-and-text-shadow"></div>
-
 				<div className="title-and-text">
 					<div className="inner-blocks-area">
 						<InnerBlocks
@@ -126,16 +122,13 @@ export default function Edit( { attributes, setAttributes } ) {
 						/>
 					</div>
 				</div>
-
 				<div className="home-hero-grid">
 					<div className="home-hero-image-2">
 						{ renderImage( 'image2', image2, 2 ) }
 					</div>
-
 					<div className="home-hero-image-3">
 						{ renderImage( 'image3', image3, 3 ) }
 					</div>
-
 					<div className="logo-block">
 						<div className="logo-block-image">
 							{ renderImage( 'image4', image4, 4 ) }

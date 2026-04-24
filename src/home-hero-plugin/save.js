@@ -21,15 +21,12 @@ export default function save( { attributes } ) {
 						) }
 					</picture>
 				</div>
-
 				<div className="title-and-text-shadow fade-left"></div>
-
 				<div className="title-and-text fade-left-after">
 					<div className="inner-blocks-area">
 						<InnerBlocks.Content />
 					</div>
 				</div>
-
 				<div className="home-hero-grid">
 					<div className="home-hero-image-2">
 						{ image2?.url && (
@@ -42,7 +39,6 @@ export default function save( { attributes } ) {
 							</picture>
 						) }
 					</div>
-
 					<div className="home-hero-image-3">
 						{ image3?.url && (
 							<picture>
@@ -54,7 +50,6 @@ export default function save( { attributes } ) {
 							</picture>
 						) }
 					</div>
-
 					<div className="logo-block">
 						<div className="logo-block-image fade-in">
 							<picture>
