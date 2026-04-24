@@ -13,20 +13,32 @@
 	},
 	"attributes": {
 		"image1": {
-			"type": "string",
-			"default": ""
+			"type": "object",
+			"default": {
+				"url": "",
+				"alt": ""
+			}
 		},
 		"image2": {
-			"type": "string",
-			"default": ""
+			"type": "object",
+			"default": {
+				"url": "",
+				"alt": ""
+			}
 		},
 		"image3": {
-			"type": "string",
-			"default": ""
+			"type": "object",
+			"default": {
+				"url": "",
+				"alt": ""
+			}
 		},
 		"image4": {
-			"type": "string",
-			"default": ""
+			"type": "object",
+			"default": {
+				"url": "",
+				"alt": ""
+			}
 		}
 	},
 	"textdomain": "home-hero-plugin",
