@@ -2,8 +2,11 @@ import { __ } from '@wordpress/i18n';
 import {
 	useBlockProps,
 	MediaPlaceholder,
+	MediaUpload,
+	MediaUploadCheck,
 	InnerBlocks,
 } from '@wordpress/block-editor';
+import { Button } from '@wordpress/components';
 import './editor.scss';
 
 export default function Edit( { attributes, setAttributes } ) {
@@ -11,34 +14,95 @@ export default function Edit( { attributes, setAttributes } ) {
 
 	const handleImageSelect = ( field ) => ( media ) => {
 		if ( media && media.url ) {
-			setAttributes( { [ field ]: media.url } );
+			setAttributes( {
+				[ field ]: {
+					url: media.url,
+					alt: media.alt || media.title || '',
+				},
+			} );
 		}
 	};
 
-	const renderImage = ( field, url, index ) => (
-		<picture key={ index }>
-			{ url ? (
-				<img
-					src={ url }
-					alt={ __( 'Selected image', 'hero-photo-layout' ) }
-					onClick={ () => setAttributes( { [ field ]: '' } ) }
-				/>
-			) : (
-				<MediaPlaceholder
-					icon="format-image"
-					labels={ {
-						title: __( 'Select Image', 'hero-photo-layout' ),
-					} }
-					accept="image/*"
-					allowedTypes={ [ 'image' ] }
-					onSelect={ handleImageSelect( field ) }
-				/>
-			) }
-		</picture>
-	);
+	const handleRemove = ( field ) => {
+		setAttributes( {
+			[ field ]: { url: '', alt: '' },
+		} );
+	};
+
+	const normalizeImage = ( image ) => {
+		if ( ! image ) return null;
+		if ( typeof image === 'string' ) {
+			return { url: image, alt: '' };
+		}
+		return image;
+	};
+
+	const renderImage = ( field, image, index ) => {
+		const normalized = normalizeImage( image );
+
+		return (
+			<div className="image-wrapper" key={ index }>
+				{ normalized?.url ? (
+					<>
+						<img
+							src={ normalized.url }
+							alt={ normalized.alt || '' }
+						/>
+						<div className="image-controls">
+							<MediaUploadCheck>
+								<MediaUpload
+									onSelect={ handleImageSelect( field ) }
+									allowedTypes={ [ 'image' ] }
+									value={ normalized.id }
+									render={ ( { open } ) => (
+										<Button
+											variant="secondary"
+											onClick={ ( e ) => {
+												e.stopPropagation();
+												open();
+											} }
+										>
+											{ __(
+												'Replace',
+												'hero-photo-layout'
+											) }
+										</Button>
+									) }
+								/>
+							</MediaUploadCheck>
+							<Button
+								variant="link"
+								isDestructive
+								onClick={ ( e ) => {
+									e.stopPropagation();
+									handleRemove( field );
+								} }
+							>
+								{ __( 'Remove', 'hero-photo-layout' ) }
+							</Button>
+						</div>
+					</>
+				) : (
+					<MediaPlaceholder
+						icon="format-image"
+						labels={ {
+							title: __( 'Select Image', 'hero-photo-layout' ),
+						} }
+						accept="image/*"
+						allowedTypes={ [ 'image' ] }
+						onSelect={ handleImageSelect( field ) }
+					/>
+				) }
+			</div>
+		);
+	};
 
 	return (
-		<div { ...useBlockProps() } className="home-hero-container alignfull">
+		<div
+			{ ...useBlockProps( {
+				className: 'home-hero-container alignfull fade-in',
+			} ) }
+		>
 			<div className="home-hero">
 				<div className="home-hero-image-1">
 					{ renderImage( 'image1', image1, 1 ) }
