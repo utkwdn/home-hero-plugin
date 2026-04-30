@@ -58,9 +58,6 @@ export default function save( { attributes } ) {
 										className="fade-up"
 										src={ image4.url }
 										alt={ image4.alt || '' }
-										aria-label={
-											image4.alt || 'Logo Graphic'
-										}
 									/>
 								) }
 							</picture>
