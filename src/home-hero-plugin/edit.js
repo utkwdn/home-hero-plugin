@@ -16,6 +16,7 @@ export default function Edit( { attributes, setAttributes } ) {
 		if ( media && media.url ) {
 			setAttributes( {
 				[ field ]: {
+					id: media.id || 0,
 					url: media.url,
 					alt: media.alt || media.title || '',
 				},
@@ -25,7 +26,7 @@ export default function Edit( { attributes, setAttributes } ) {
 
 	const handleRemove = ( field ) => {
 		setAttributes( {
-			[ field ]: { url: '', alt: '' },
+			[ field ]: { id: 0, url: '', alt: '' },
 		} );
 	};
 

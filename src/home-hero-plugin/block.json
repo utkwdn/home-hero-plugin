@@ -15,6 +15,7 @@
 		"image1": {
 			"type": "object",
 			"default": {
+				"id": 0,
 				"url": "",
 				"alt": ""
 			}
@@ -22,6 +23,7 @@
 		"image2": {
 			"type": "object",
 			"default": {
+				"id": 0,
 				"url": "",
 				"alt": ""
 			}
@@ -29,6 +31,7 @@
 		"image3": {
 			"type": "object",
 			"default": {
+				"id": 0,
 				"url": "",
 				"alt": ""
 			}
@@ -36,6 +39,7 @@
 		"image4": {
 			"type": "object",
 			"default": {
+				"id": 0,
 				"url": "",
 				"alt": ""
 			}
